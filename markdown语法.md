@@ -1,6 +1,6 @@
 
 
-Markdown 是一种</font>**轻量级标记语言**<font style="color:rgba(0, 0, 0, 0.8);">，由约翰・格鲁伯（John Gruber）于 2004 年创建，核心目标是「用简单的语法实现结构化文本排版」—— 无需像 Word 那样点击按钮调整格式，只需在文本中添加少量特殊符号，就能快速生成标题、列表、链接、表格等元素，且最终可导出为 HTML、PDF、文档等格式，广泛用于笔记、博客、代码文档（如 GitHub README）等场景。</font>
+Markdown 是一种**轻量级标记语言**<font style="color:rgba(0, 0, 0, 0.8);">，由约翰・格鲁伯（John Gruber）于 2004 年创建，核心目标是「用简单的语法实现结构化文本排版」—— 无需像 Word 那样点击按钮调整格式，只需在文本中添加少量特殊符号，就能快速生成标题、列表、链接、表格等元素，且最终可导出为 HTML、PDF、文档等格式，广泛用于笔记、博客、代码文档（如 GitHub README）等场景。</font>
 
 ---
 
@@ -93,7 +93,7 @@ Markdown 是一种</font>**轻量级标记语言**<font style="color:rgba(0, 0, 
 ### 代码块
 三个 \` 符号包住代码（esc下面那个）
 <pre>
-```java
+```
 public class Main {
 	public static void main(String args[]){
 	System.out.println("Hello,World");
@@ -101,6 +101,7 @@ public class Main {
 }
 ```
 </pre>
+
 
 
 或者每行代码前都加四个空格（一个缩进）
@@ -111,7 +112,6 @@ public class Main {
     }
 }
 </pre>
-
 **行内代码**
 要标记行内代码，用单个\` 符号包裹内容  
 效果如下：`print("Hello World")` 
@@ -182,7 +182,7 @@ public class Main {
 
 ​	效果：球体体积公式：$$V=\frac{4}{3}\pi r^3$$
 
-**基础符号规则**
+**基础符号规则**(都要用`$`包裹)
 
 | 名称     | 规则                                                 | 效果       |
 | -------- | ---------------------------------------------------- | ---------- |
@@ -196,7 +196,7 @@ public class Main {
 | 除       | `\div`   | $\div$   |
 | 加减     | `\pm`    | $\pm$    |
 | 减加     | `\mp`    | $\mp$    |
-| 点乘     | `\cdont` | $\cdont$ |
+| 点乘     | `\cdot`  | $\cdot$  |
 
 **复杂结构规则**
 
@@ -254,7 +254,7 @@ $$f(x) = \begin{cases}  x & \text{if } x \geq 0 \\  -x & \text{if } x < 0 \end{c
 + **特殊注意**：分割线需 “符号无空格连续写”，既不属于 “文字样式”，也不属于 “符号后加空格”，单独记忆即可。
 
 ## 软件推荐
-+ Typora：一次性付费89元，所见即所得，功能完备，个人笔记首选
++ Typora(一次性付费89元)
 + VS Code + Markdown 插件
 + Notable
 + 在线编辑器：StackEdit、Dillinger
